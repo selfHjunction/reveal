@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<style>
+			body, h2, h3, p, li {color: black;}
+			img {box-shadow: none !important;}
+			.container{
+				display:flex;
+			}
+			.col{
+				flex:1;
+			}
+		</style>
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body style="background-image: url('bg.png'); background-size: 100% 100%;">
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h2 style="color:black;">Estágio curricular</h2>
+						<p>
+						Efeito Da Gravidade No Crescimento De Estruturas De Materiais Biocompatíveis Para Aplicações Em Engenharia De Tecidos
+						</p>
+						<p style="font-size:50%;">DAVID BULHA 2387</p>
+						<img src="cftc.png" style="width:20%;height:20%;">
+					</section>
+					<section>
+						<h3 style="color:black;">Cronograma de Estágio</h3>
+						<img src="fig2.png" style="width:70%;height:70%;">
+						<p style="font-size:40%;">19 de Março ~ 25 de Setembro</p>
+					</section>
+				</section>
+				<section>
+					<h3 style="color:black;">Qual o problema e porque nos interessa</h3>
+					<ul>
+						<li>Auto-organização de <i>scaffolds in vivo</i> para o desenvolvimento de novas técnicas em engenharia de tecidos</li>
+						<li>Maior compatibilidade com as células do tecido alvo</li>
+					</ul>
+
+				</section>
+				<section>
+					<h3 style="color:black;">O que foi feito</h3>
+					<ul>
+						<li>Estudo de fatores intervenientes no processo de auto-organização de micropartículas através de simulações de dinâmica molecular
+							<ul>
+								<li>Efeito da gravidade</li>
+								<li>Interações entre partículas coloidais</li>
+								<li>Relação entre as densidades das partículas</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<img src="fig1.png" style="width:70%;height:70%;">
+					<p style="font-size:25%;">Custódio, C.A., Cerqueira, M.T., Marques, A.P., Reis, R.L., & Mano, J.F. (2015). Cell selective chitosan m icrop articles as injectable cell carriers for tissue regeneration. Bio- materials, 43, 23.</p>
+				</section>
+				<section>
+					<h3 style="color:black;">Movimento Browniano e equação de Langevin</h3>
+					<img src="langevin.png" style="width:50%;height:50%;">
+					<img src="qf.png" style="width:60%;height:60%;">
+					<img src="dg.png" style="width:20%;height:20%;">
+				</section>
+				<section>
+					<img src="drag.png" style="width:20%;height:20%;">
+					<div class="container">
+						<div class="col">
+							<img src="var.png" style="width:30%;height:10%;">
+							<img src="gff.png" style="width:100%;height:70%;">
+						</div>
+						<div class="col">
+							<img src="dt.png" style="width:30%;height:20%;">
+							<img src="mff.png" style="width:100%;height:75%;">
+						</div>
+						<div class="col">
+							<img src="dr.png" style="width:30%;height:20%;">
+							<img src="of.png" style="width:100%;height:75%;">
+						</div>
+					</div>
+				</section>
+				<section>
+					<img src="fr.png" style="width:30%;height:30%;">
+					<img src="tch.png" style="width:80%;height:80%;">
+				</section>
+				<section>
+					<section>
+						<img src="dens.png" style="width:60%;height:60%;">
+					</section>
+					<section>
+						<img src="vij.png" style="width:50%;height:50%;">
+						<img src="vii.png" style="width:50%;height:50%;">
+					</section>
+				</section>
+				<section>
+					<div class="container">
+						<div class="col">
+							<img src="gpc.png" style="width:100%;height:100%;">
+						</div>
+						<div class="col">
+							<img src="gpq.png" style="width:100%;height:100%;">
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3 style="color:black;">O que encontrámos</h3>
+					<ul>
+						<li>As células difundem-se mais que as micropartículas</li>
+						<li>As forças de interação entre partículas contribuem mais para a sua agregação para forças resultantes com sentidos opostos</li>
+						<li>A força resultante a atuar nos colóides é o fator dominante no crescimento de <i>scaffolds</i></li>
+					</ul>
+					<img src="sn.png" style="width:50%;height:50%;">
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				transition: 'linear',
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
